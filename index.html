@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Hub | Grade 9</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <header>
+            <h1>GRADE 9 PORTAL</h1>
+            <p>Academic Year 2024-2025</p>
+        </header>
+
+        <div class="dashboard-grid">
+            <div class="glass-container">
+                <h2 class="card-label">GWA CALCULATOR</h2>
+                <div class="scroll-box">
+                    <table id="gradeTable">
+                        <thead>
+                            <tr>
+                                <th>SUBJECT</th>
+                                <th>GRADE</th>
+                            </tr>
+                        </thead>
+                        <tbody id="subjectRows">
+                            </tbody>
+                    </table>
+                </div>
+                <div class="total-bar">
+                    <span class="total-label">FINAL GWA</span>
+                    <span id="gwaDisplay" class="total-value">1.000</span>
+                </div>
+            </div>
+
+            <div class="glass-container accent-bg">
+                <h2 class="card-label">QUICK CONVERTER</h2>
+                <div class="converter-inputs">
+                    <div class="input-item">
+                        <label>PREVIOUS QUARTER</label>
+                        <select id="prevGrade" class="fancy-select"></select>
+                    </div>
+                    <div class="input-item">
+                        <label>CURRENT QUARTER</label>
+                        <select id="currGrade" class="fancy-select"></select>
+                    </div>
+                </div>
+
+                <div class="huge-display">
+                    <div id="equivDisplay" class="result-number">--</div>
+                    <div class="result-subtext">EQUIVALENT</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
